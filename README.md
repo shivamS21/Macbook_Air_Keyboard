@@ -3,7 +3,6 @@
 Technology Used:
 1. Tailwindcss
 2. ReactJs
-3. 
 
 # How to Use?
 This project is created using [Vite](https://vitejs.dev). To run this project, follow these steps:
