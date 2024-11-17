@@ -10,13 +10,15 @@ const AlphaCharButton = (props) => {
     }
     const positionClass = (position) ? position : 'center';
 
+    const arr = ['esc', 'delete', 'return', 'tab', 'caps lock', 'shift', 'fn', 'option', 'control'];
+    const textSize = arr.includes(label2) ? 'text-sm' : (label2 && label2[0] === 'F' ? 'text-xs' : '');
     return (
-        <button className={`bg-black text-white h-[60px] w-[60px] flex flex-col justify-center items-${positionClass} rounded-md p-2`}>
+        <button className={`bg-black text-white h-[64px] w-[64px] flex flex-col justify-center items-${positionClass} rounded-md p-2`}>
             {label2===''?'':<div className={`flex justify-${positionClass}`}>{label1}</div>}
-            <div className={label2 === '' ? `bg-powerButton w-10 h-10 rounded-3xl` : `${txt}`}>{label2}</div>
+            <div className={label2 === '' ? `bg-powerButton w-10 h-10 rounded-3xl` : `${textSize}`}>{label2}</div>
 
         </button>
     )
 }
 
-export default AlphaCharButton
+export default AlphaCharButton;

@@ -10,9 +10,9 @@ const Row6 = () => {
         <Button label2={'fn'} label1={''} position={'center'}/>
         <Button label2={'control'} label1={'⌃'} position={'end'}/>
         <Button label2={'option'} label1={'⌥'} position={'end'}/>
-        <Command label2={'command'} label1={'⌘'} position={'end'}/>
+        <Command label2={'command'} label1={'⌘'} position={'right'}/>
         <TabButton/>
-        <Command label2={'command'} label1={'⌘'} position={'start'}/>
+        <Command label2={'command'} label1={'⌘'} position={'left'}/>
         <Button label2={'option'} label1={'⌥'} position={'start'}/>
         <Arrow/>
 
